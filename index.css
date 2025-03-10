@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(61, 5, 61);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+}
+
+button:active {
+  background-color: #004085;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-text {
+  flex-grow: 1;
+  word-break: break-word; /* Para evitar que el texto largo rompa el diseño */
+}
+
+.task-buttons {
+  display: flex;
+}
+
+.edit-button, .delete-button {
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 500px) {
+  .input-container {
+      flex-direction: column;
+  }
+
+  input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}

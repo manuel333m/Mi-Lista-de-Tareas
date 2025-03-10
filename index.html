@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Lista de Tareas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Lista de Tareas</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Añadir nueva tarea...">
+            <button id="addButton">Agregar</button>
+            <p id="error" class="error"></p>
+        </div>
+        <ul id="taskList">
+            <li class="completed">
+                <span class="task-text">Tarea completada de ejemplo</span>
+                <div class="task-buttons">
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
