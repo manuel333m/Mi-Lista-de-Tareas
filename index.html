@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Lista de Tareas</title>
     <link rel="stylesheet" href="index.css">
-</head>
-<body>
     <div class="container">
         <h1>Mi Lista de Tareas</h1>
         <div class="input-container">
@@ -14,12 +12,41 @@
             <button id="addButton">Agregar</button>
             <p id="error" class="error"></p>
         </div>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <button id="edit">X</button>
+            <input type="text" id="taskInput" placeholder="Inversion aires acondicionados...">
+            <p id="error" class="error"></p>
+            <button id="edit">✔</button>
+        </div>
+        <div class="input-container">
+            <button id="edit">X</button>
+            <input type="text" id="taskInput" placeholder="Proyecto...">
+            <p id="error" class="error"></p>
+            <button id="edit">✔</button>
+        </div>
+        <div class="input-container">
+            <button id="edit">X</button>
+            <input type="text" id="taskInput" placeholder="Presupuesto...">
+            <p id="error" class="error"></p>
+            <button id="edit">✔</button>
+        </div>
+        <div class="input-container">
+            <button id="edit">X</button>
+            <input type="text" id="taskInput" placeholder="Reunion miercoles...">
+            <p id="error" class="error"></p>
+            <button id="edit">✔</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Total 5   completadas:1   incompletadas:4...">
+            <p id="error" class="error"></p>
+        </div>
         <ul id="taskList">
             <li class="completed">
                 <span class="task-text">Tarea completada de ejemplo</span>
                 <div class="task-buttons">
-                    <button class="edit-button">Editar</button>
-                    <button class="delete-button">Eliminar</button>
                 </div>
             </li>
         </ul>
