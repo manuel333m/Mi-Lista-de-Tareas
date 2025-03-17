@@ -54,7 +54,7 @@ button:active {
 }
 
 .error {
-  color: red;
+  color: rgb(161, 28, 28);
   margin-top: 5px;
 }
 
